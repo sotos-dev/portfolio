@@ -1,0 +1,89 @@
+@import "the-new-css-reset/css/reset.css";
+
+// Colors
+$blue: #2a5fe4;
+$skillBg: #202e51;
+$whiteText: #fff;
+$darkBlueText: #1e293b;
+$lightThemeBg: #f2f4fd;
+$darkThemeBg: #0b1736;
+
+// Fonts
+$mono: "IBM Plex Mono", monospace;
+$inter: "Inter", sans-serif;
+
+// Breakpoints
+$bigMobile: 450px;
+$smallTablet: 640px;
+$tablet: 768px;
+$laptop: 1024px;
+$desktop: 1280px;
+$bigScreens: 1536px;
+
+:root {
+  --blue: #2a5fe4;
+  --skillBg: #202e51;
+  --whiteText: #fff;
+  --darkBlueText: #1e293b;
+  --lightThemeBg: #f2f4fd;
+  --darkThemeBg: #0b1736;
+}
+
+.lightTheme {
+  $bg: $lightThemeBg;
+}
+.darkTheme {
+  $bg: #0b1736;
+}
+
+body {
+  background-color: $bg;
+}
+
+// Globals
+html,
+body,
+*,
+*:before,
+*:after {
+  font-family: $inter;
+  box-sizing: border-box;
+}
+
+// Mixins
+@mixin flex-row-center {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+@mixin flex-row-start {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+@mixin flex-row-center {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+@mixin flex-col-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+@mixin flex-col-start {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+@mixin flex-col-end {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+}
