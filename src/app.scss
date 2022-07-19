@@ -1,0 +1,30 @@
+.app-wrapper {
+  min-height: 100vh;
+  height: 100%;
+
+  .switch-wrapper {
+    margin-top: 50px;
+    padding: 10px 30px;
+    border: 1px solid black;
+    display: inline-block;
+    position: relative;
+    height: 50px;
+    width: 100px;
+
+    .checkbox {
+      position: absolute;
+      height: 40px;
+      width: 40px;
+      background-color: black;
+      top: 5px;
+      left: 5px;
+      right: 0;
+      bottom: 0;
+    }
+    .checkboxMoved {
+      //   transform: translateX(50px);
+      right: 5px;
+      left: 0;
+    }
+  }
+}

@@ -20,26 +20,6 @@ $laptop: 1024px;
 $desktop: 1280px;
 $bigScreens: 1536px;
 
-:root {
-  --blue: #2a5fe4;
-  --skillBg: #202e51;
-  --whiteText: #fff;
-  --darkBlueText: #1e293b;
-  --lightThemeBg: #f2f4fd;
-  --darkThemeBg: #0b1736;
-}
-
-.lightTheme {
-  $bg: $lightThemeBg;
-}
-.darkTheme {
-  $bg: #0b1736;
-}
-
-body {
-  background-color: $bg;
-}
-
 // Globals
 html,
 body,
