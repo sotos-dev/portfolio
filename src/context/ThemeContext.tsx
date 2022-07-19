@@ -7,12 +7,20 @@ export const themes = {
     color: "#1e293b",
     skillsBg: "#fff",
     transition: "300ms",
+    sunBg: "#e4ce2a",
+    sunColor: "white",
+    moonBg: "",
+    moonColor: "#1e293b",
   },
   dark: {
     backgroundColor: "#0b1736",
     color: "#fff",
     skillsBg: "#202e51",
     transition: "300ms",
+    sunBg: "",
+    sunColor: "white",
+    moonBg: "#f2f4fd",
+    moonColor: "#1e293b",
   },
 }
 
