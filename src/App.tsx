@@ -4,13 +4,7 @@ import { useTheme } from "./context/ThemeContext"
 import { BsMoon, BsSun } from "react-icons/bs"
 
 const App: React.FC = () => {
-  const { isLight, theme, toggleTheme, setIsLight } = useTheme()
-  const [moveButton, setMoveButton] = useState(false)
-
-  const changeTheme = (): void => {
-    setMoveButton((prev) => (prev = !prev))
-    toggleTheme()
-  }
+  const { theme, toggleTheme } = useTheme()
 
   return (
     <>
@@ -28,11 +22,11 @@ const App: React.FC = () => {
           <BsSun
             className='icons sun'
             style={{ backgroundColor: theme.sunBg, color: theme.sunColor }}
-            onClick={changeTheme}
+            onClick={toggleTheme}
           />
           <BsMoon
             className='icons moon'
-            onClick={changeTheme}
+            onClick={toggleTheme}
             style={{ backgroundColor: theme.moonBg, color: theme.moonColor }}
           />
         </div>

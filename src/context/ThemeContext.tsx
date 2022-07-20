@@ -46,8 +46,6 @@ const ThemeContextProvider = ({ children }: IThemeContextProviderProps) => {
   }
 
   const values = {
-    isLight,
-    setIsLight,
     theme,
     toggleTheme,
   }
