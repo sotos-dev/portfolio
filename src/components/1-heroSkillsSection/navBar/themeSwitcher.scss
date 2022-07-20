@@ -1,0 +1,53 @@
+@import "../../../styles/breakpoints";
+
+.switch-wrapper {
+  padding: 5px;
+  margin-bottom: 5px;
+  border-radius: 100px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+
+  .icons {
+    font-size: 1.8rem;
+    padding: 4px;
+    border-radius: 100%;
+    cursor: pointer;
+  }
+}
+
+@media (min-width: $smallTablet) {
+  .switch-wrapper {
+    .icons {
+      font-size: 2rem;
+      padding: 4px;
+    }
+  }
+}
+
+@media (min-width: $tablet) {
+  .switch-wrapper {
+    .icons {
+      font-size: 2.2rem;
+      padding: 4px;
+    }
+  }
+}
+
+@media (min-width: $laptop) {
+  .switch-wrapper {
+    .icons {
+      font-size: 2.4rem;
+      padding: 5px;
+    }
+  }
+}
+
+@media (min-width: $desktop) {
+  .switch-wrapper {
+    .icons {
+      font-size: 2.5rem;
+      padding: 5px;
+    }
+  }
+}

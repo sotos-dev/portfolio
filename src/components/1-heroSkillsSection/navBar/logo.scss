@@ -1,0 +1,44 @@
+@import "../../../styles/breakpoints";
+
+.logo-wrapper {
+  max-width: 100px;
+  .logo {
+    width: 100%;
+  }
+}
+
+@media (min-width: $smallTablet) {
+  .logo-wrapper {
+    max-width: 110px;
+    .logo {
+      width: 100%;
+    }
+  }
+}
+
+@media (min-width: $tablet) {
+  .logo-wrapper {
+    max-width: 120px;
+    .logo {
+      width: 100%;
+    }
+  }
+}
+
+@media (min-width: $laptop) {
+  .logo-wrapper {
+    max-width: 130px;
+    .logo {
+      width: 100%;
+    }
+  }
+}
+
+@media (min-width: $desktop) {
+  .logo-wrapper {
+    max-width: 150px;
+    .logo {
+      width: 100%;
+    }
+  }
+}

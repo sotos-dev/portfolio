@@ -2,12 +2,12 @@
 
 .container {
   max-width: 1550px;
-  padding: 15px;
+  padding: 20px;
   margin: 0 auto;
 }
 
 @media (min-width: $smallTablet) {
   .container {
-    padding: 25px;
+    padding: 35px;
   }
 }

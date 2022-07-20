@@ -1,10 +1,10 @@
-import React from "react"
+import "./container.scss"
 
 export interface IContainerProps {
   children: React.ReactNode
 }
 
-const Container: React.FC<IContainerProps> = ({ children }) => {
+const Container = ({ children }: IContainerProps) => {
   return (
     <>
       <div className='container'>{children}</div>
