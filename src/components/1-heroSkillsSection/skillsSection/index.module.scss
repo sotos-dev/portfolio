@@ -1,0 +1,14 @@
+@import "../../../styles/breakpoints";
+@import "../../../styles/mixins";
+
+.skills-section {
+  width: 100%;
+  text-align: center;
+
+  .under-title {
+    margin: 10px auto 0;
+    max-width: 270px;
+    font-size: 1.1rem;
+    font-weight: 300;
+  }
+}

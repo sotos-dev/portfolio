@@ -1,8 +1,10 @@
 import { useTheme } from "../../context/ThemeContext"
-import Container from "../../ui/Container"
-import HeroSection from "./heroSection"
+import { skillsData, otherSkills } from "../../utils/data"
 import styles from "./index.module.scss"
+import Container from "../../ui/Container"
 import Navbar from "./navBar"
+import HeroSection from "./heroSection"
+import SkillsSection from "./skillsSection"
 
 export interface IHeroSkillsSectionProps {}
 
@@ -23,6 +25,8 @@ const HeroSkillsSection = ({}: IHeroSkillsSectionProps) => {
             <Navbar />
             {/* Hero Section */}
             <HeroSection />
+            {/* Skills Section */}
+            <SkillsSection skillsData={skillsData} otherSkills={otherSkills} />
           </div>
         </Container>
       </section>

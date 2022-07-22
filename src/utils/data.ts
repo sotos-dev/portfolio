@@ -21,7 +21,7 @@ export const navLinks = [
   },
 ]
 
-export const skills = [
+export const skillsData = [
   {
     skillName: "React",
     id: "react",
@@ -66,19 +66,19 @@ export const skills = [
 
 export const otherSkills = [
   {
-    otherSkillName: "VS Code",
+    skillName: "VS Code",
     id: "vscode",
   },
   {
-    otherSkillName: "Firebase",
+    skillName: "Firebase",
     id: "firebase",
   },
   {
-    otherSkillName: "Figma",
+    skillName: "Figma",
     id: "figma",
   },
   {
-    otherSkillName: "Adobe XD",
+    skillName: "Adobe XD",
     id: "adobexd",
   },
 ]
