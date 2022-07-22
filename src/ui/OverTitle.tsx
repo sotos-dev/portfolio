@@ -1,3 +1,5 @@
+import styles from "./overTitle.module.scss"
+
 export interface IOverTitleProps {
   text: string
 }
@@ -5,7 +7,7 @@ export interface IOverTitleProps {
 const OverTitle = ({ text }: IOverTitleProps) => {
   return (
     <>
-      <h3 className='over-title'>{text}</h3>
+      <h3 className={styles["over-title"]}>{text}</h3>
     </>
   )
 }

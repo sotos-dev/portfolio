@@ -1,4 +1,4 @@
-import "./container.scss"
+import styles from "./container.module.scss"
 
 export interface IContainerProps {
   children: React.ReactNode
@@ -7,7 +7,7 @@ export interface IContainerProps {
 const Container = ({ children }: IContainerProps) => {
   return (
     <>
-      <div className='container'>{children}</div>
+      <div className={styles["container"]}>{children}</div>
     </>
   )
 }

@@ -1,4 +1,4 @@
-import React from "react"
+import "./noteworthyProjects.module.scss"
 
 export interface INoteWorthyProjectsProps {
   title: string

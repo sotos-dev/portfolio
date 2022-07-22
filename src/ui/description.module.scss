@@ -1,0 +1,35 @@
+@import "../styles/breakpoints";
+
+.description {
+  margin-top: 10px;
+  line-height: 1.4rem;
+  letter-spacing: 1px;
+  max-width: 450px;
+}
+
+@media (min-width: $smallTablet) {
+  .description {
+    font-size: 1.1rem;
+    line-height: 1.5rem;
+    max-width: 480px;
+    margin-top: 15px;
+  }
+}
+
+@media (min-width: $laptop) {
+  .description {
+    font-size: 1.2rem;
+    max-width: 500px;
+    line-height: 1.6rem;
+    margin-top: 25px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .description {
+    font-size: 1.3rem;
+    max-width: 550px;
+    line-height: 1.9rem;
+    margin-top: 20px;
+  }
+}

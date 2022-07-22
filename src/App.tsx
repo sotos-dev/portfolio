@@ -1,5 +1,6 @@
 import HeroSkillsSection from "./components/1-heroSkillsSection"
 import { useTheme } from "./context/ThemeContext"
+import styles from "./app.module.scss"
 
 const App = () => {
   const { theme } = useTheme()

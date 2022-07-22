@@ -1,4 +1,4 @@
-import React from "react"
+import styles from ".skills.module.scss"
 
 export interface ISkillsProps {
   skill: string

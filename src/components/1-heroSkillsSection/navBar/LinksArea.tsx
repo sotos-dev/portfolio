@@ -1,16 +1,23 @@
-import "./linksArea.scss"
+import styles from "./linksArea.module.scss"
 
-import { IMobileLinksAreaProps as INavProps } from "../navBar/MobileLinksArea"
+interface INavProps {
+  navLinks: {
+    linkName: string
+    id: string
+  }[]
+}
 
 const Nav = ({ navLinks }: INavProps) => {
   return (
     <>
-      <nav className='links-area-wrapper'>
-        <ul>
+      <nav className={styles["links-area-wrapper"]}>
+        <ul className={styles["links-wrapper"]}>
           {navLinks.map((navLink) => {
             return (
               <li key={navLink.id}>
-                <a href='/'>{navLink.linkName}</a>
+                <a href='/' className={styles["nav-link"]}>
+                  {navLink.linkName}
+                </a>
               </li>
             )
           })}

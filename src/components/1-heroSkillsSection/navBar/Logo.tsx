@@ -1,19 +1,16 @@
-import LogoWhite from "../../../assets/images/logo-black.png"
-import LogoBlack from "../../../assets/images/logo-white.png"
 import { useTheme } from "../../../context/ThemeContext"
-
-import "./logo.scss"
+import styles from "./logo.module.scss"
 
 const Logo = () => {
   const { theme } = useTheme()
 
   return (
     <>
-      <div className='logo-wrapper'>
+      <div className={styles["logo-wrapper"]}>
         <img
           src={theme.logo}
           alt='Sotos Logo'
-          className='logo'
+          className={styles["logo"]}
           style={{ transition: theme.transition }}
         />
       </div>

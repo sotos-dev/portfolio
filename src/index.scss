@@ -1,5 +1,6 @@
 @import "./styles/fonts";
 @import "the-new-css-reset/css/reset.css";
+@import "./styles/breakpoints";
 
 // Globals
 html,
@@ -9,4 +10,29 @@ body,
 *:after {
   font-family: $inter;
   box-sizing: border-box;
+}
+
+// Global style for margins between website's sections
+.spacer {
+  margin: 40px 0;
+}
+@media (min-width: $smallTablet) {
+  .spacer {
+    margin: 60px 0;
+  }
+}
+@media (min-width: $tablet) {
+  .spacer {
+    margin: 100px 0;
+  }
+}
+@media (min-width: $laptop) {
+  .spacer {
+    margin: 120px 0;
+  }
+}
+@media (min-width: $desktop) {
+  .spacer {
+    margin: 140px 0;
+  }
 }

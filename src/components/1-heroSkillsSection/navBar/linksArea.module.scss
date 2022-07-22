@@ -1,0 +1,47 @@
+@import "../../../styles/breakpoints";
+@import "../../../styles/mixins";
+
+.links-area-wrapper {
+  display: none;
+}
+
+@media (min-width: $tablet) {
+  .links-area-wrapper {
+    display: block;
+
+    .links-wrapper {
+      @include flex-row-center;
+      gap: 30px;
+
+      .nav-link {
+        font-size: 1.1rem;
+      }
+    }
+  }
+}
+
+@media (min-width: $laptop) {
+  .links-area-wrapper {
+    .links-wrapper {
+      @include flex-row-center;
+      gap: 40px;
+
+      .nav-link {
+        font-size: 1.3rem;
+      }
+    }
+  }
+}
+
+@media (min-width: $desktop) {
+  .links-area-wrapper {
+    .links-wrapper {
+      @include flex-row-center;
+      gap: 60px;
+
+      .nav-link {
+        font-size: 1.4rem;
+      }
+    }
+  }
+}

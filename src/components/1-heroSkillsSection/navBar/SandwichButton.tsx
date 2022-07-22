@@ -1,13 +1,19 @@
 import { HiOutlineMenu } from "react-icons/hi"
-import "./sandwichButton.scss"
+import styles from "./sandwichButton.module.scss"
 
-export interface IMobileNavButtonProps {}
+export interface IMobileNavButtonProps {
+  setIsNavButtonOpen: React.Dispatch<React.SetStateAction<boolean>>
+}
 
-const MobileNavButton = ({}: IMobileNavButtonProps) => {
+const MobileNavButton = ({ setIsNavButtonOpen }: IMobileNavButtonProps) => {
   return (
     <>
-      <div className='menu-icon-wrapper'>
-        <HiOutlineMenu className='menu-icon' />
+      <div
+        className={styles["menu-icon-wrapper"]}
+        onClick={() => {
+          setIsNavButtonOpen((prev) => (prev = !prev))
+        }}>
+        <HiOutlineMenu className={styles["menu-icon"]} />
       </div>
     </>
   )

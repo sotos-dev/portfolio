@@ -2,18 +2,22 @@ export const navLinks = [
   {
     linkName: "Home",
     id: "home",
+    divider: true,
   },
   {
     linkName: "Skills",
     id: "skills",
+    divider: true,
   },
   {
     linkName: "Work",
     id: "work",
+    divider: true,
   },
   {
     linkName: "Get in Touch",
     id: "getintouch",
+    divider: false,
   },
 ]
 

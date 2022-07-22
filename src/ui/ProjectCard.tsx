@@ -1,4 +1,4 @@
-import React from "react"
+import styles from "./projectCard.module.scss"
 
 export interface IProjectCardProps {
   title: string

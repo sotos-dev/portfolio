@@ -1,4 +1,4 @@
-import React from "react"
+import styles from "./getInTouchButton.module.scss"
 
 export interface IGetInTouchButtonsProps {
   text: string

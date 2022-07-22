@@ -1,4 +1,4 @@
-import "./themeSwitcher.scss"
+import styles from "./themeSwitcher.module.scss"
 import { useTheme } from "../../../context/ThemeContext"
 import { BsMoon, BsSun } from "react-icons/bs"
 
@@ -10,13 +10,13 @@ const ThemeSwitcher = ({}: IThemeSwitcherProps) => {
   return (
     <>
       <div
-        className='switch-wrapper'
+        className={styles["switch-wrapper"]}
         style={{
           border: `1px solid ${theme.color}`,
           transition: theme.transition,
         }}>
         <BsSun
-          className='icons sun'
+          className={styles["icons"]}
           style={{
             backgroundColor: theme.sunBg,
             color: theme.sunColor,
@@ -25,7 +25,7 @@ const ThemeSwitcher = ({}: IThemeSwitcherProps) => {
           onClick={toggleTheme}
         />
         <BsMoon
-          className='icons moon'
+          className={styles["icons"]}
           onClick={toggleTheme}
           style={{
             backgroundColor: theme.moonBg,
