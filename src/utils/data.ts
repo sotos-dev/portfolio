@@ -39,6 +39,10 @@ export const skillsData = [
     id: "nextjs",
   },
   {
+    skillName: "Svelte",
+    id: "svelte",
+  },
+  {
     skillName: "Github",
     id: "github",
   },

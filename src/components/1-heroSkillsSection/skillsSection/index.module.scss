@@ -11,4 +11,36 @@
     font-size: 1.1rem;
     font-weight: 300;
   }
+
+  .other-skills {
+    margin-top: 50px;
+    font-size: 1.3rem;
+    font-weight: 500;
+  }
+}
+
+@media (min-width: $smallTablet) {
+  .skills-section {
+    .under-title {
+      max-width: 300px;
+      font-size: 1.2rem;
+    }
+
+    .other-skills {
+      font-size: 1.4rem;
+    }
+  }
+}
+
+@media (min-width: $laptop) {
+  .skills-section {
+    .under-title {
+      max-width: 330px;
+      font-size: 1.3rem;
+    }
+
+    .other-skills {
+      font-size: 1.6rem;
+    }
+  }
 }

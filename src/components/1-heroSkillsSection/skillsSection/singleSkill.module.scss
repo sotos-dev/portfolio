@@ -1,0 +1,29 @@
+@import "../../../styles/breakpoints";
+@import "../../../styles/mixins";
+@import "../../../styles/fonts";
+
+.skill {
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-family: $mono;
+}
+
+@media (min-width: $tablet) {
+  .skill {
+    padding: 13px 24px;
+  }
+}
+
+@media (min-width: $laptop) {
+  .skill {
+    padding: 13px 24px;
+    font-size: 1.1rem;
+  }
+}
+
+@media (min-width: $desktop) {
+  .skill {
+    padding: 15px 30px;
+    font-size: 1.2rem;
+  }
+}
