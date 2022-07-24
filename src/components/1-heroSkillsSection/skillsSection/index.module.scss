@@ -17,6 +17,10 @@
     font-size: 1.3rem;
     font-weight: 500;
   }
+
+  .image-wrapper {
+    display: none;
+  }
 }
 
 @media (min-width: $smallTablet) {
@@ -25,7 +29,6 @@
       max-width: 300px;
       font-size: 1.2rem;
     }
-
     .other-skills {
       font-size: 1.4rem;
     }
@@ -35,12 +38,66 @@
 @media (min-width: $laptop) {
   .skills-section {
     .under-title {
-      max-width: 330px;
+      max-width: 800px;
       font-size: 1.3rem;
     }
 
     .other-skills {
       font-size: 1.6rem;
+    }
+  }
+}
+
+@media (min-width: $desktop) {
+  .skills-section {
+    position: relative;
+    .under-title {
+      max-width: 800px;
+      font-size: 1.3rem;
+    }
+
+    .other-skills {
+      font-size: 1.6rem;
+    }
+
+    .image-wrapper {
+      display: block;
+      .react-icon {
+        position: absolute;
+        top: -20px;
+        left: 255px;
+        max-width: 100px;
+      }
+      .typescript-icon {
+        position: absolute;
+        top: 220px;
+        left: 45px;
+        max-width: 100px;
+      }
+      .next-icon {
+        position: absolute;
+        bottom: -130px;
+        left: 260px;
+        max-width: 100px;
+      }
+      .sass-icon {
+        position: absolute;
+        top: -20px;
+        right: 255px;
+        max-width: 100px;
+      }
+      .tailwind-icon {
+        position: absolute;
+        top: 220px;
+        right: 45px;
+        max-width: 100px;
+      }
+      .github-icon {
+        position: absolute;
+        bottom: -130px;
+        right: 260px;
+        max-width: 100px;
+      }
     }
   }
 }

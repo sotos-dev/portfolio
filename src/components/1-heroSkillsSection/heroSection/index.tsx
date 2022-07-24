@@ -2,14 +2,16 @@ import styles from "./index.module.scss"
 import OverTitle from "../../../ui/OverTitle"
 import BigTitle from "../../../ui/BigTitle"
 import Description from "../../../ui/Description"
-import HeroImage from "../../../assets/images/main-graphic.png"
 import TsIcon from "../../../assets/images/typescript.png"
 import BracesIcon from "../../../assets/images/curly-braces.png"
 import TagIcon from "../../../assets/images/tag.png"
+import { useTheme } from "../../../context/ThemeContext"
 
 export interface IHeroSectionProps {}
 
 const HeroSection = ({}: IHeroSectionProps) => {
+  const { theme } = useTheme()
+
   return (
     <>
       <section className={`${styles["hero-section"]} spacer`}>
@@ -26,7 +28,7 @@ const HeroSection = ({}: IHeroSectionProps) => {
         {/* Image Area */}
         <div className={styles["hero-images"]}>
           <img
-            src={HeroImage}
+            src={theme.heroGraphic}
             alt='hero graphic'
             className={styles["main-graphic"]}
           />

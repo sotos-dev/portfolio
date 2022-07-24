@@ -1,0 +1,32 @@
+@import "../../../styles/breakpoints";
+
+.project-title {
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-top: 7px;
+}
+
+@media (min-width: $smallTablet) {
+  .project-title {
+    font-size: 1.6rem;
+  }
+}
+
+@media (min-width: $tablet) {
+  .project-title {
+    font-size: 1.7rem;
+  }
+}
+
+@media (min-width: $laptop) {
+  .project-title {
+    font-size: 1.8rem;
+  }
+}
+
+@media (min-width: $desktop) {
+  .project-title {
+    font-size: 2rem;
+    letter-spacing: 1px;
+  }
+}

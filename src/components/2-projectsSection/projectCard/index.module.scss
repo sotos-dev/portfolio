@@ -1,0 +1,98 @@
+@import "../../../styles/breakpoints";
+@import "../../../styles/mixins";
+@import "../../../styles/colors";
+
+.project-cards-wrapper {
+  margin-top: 30px;
+  @include flex-col-center;
+  gap: 40px;
+  .project-card {
+    border-radius: 8px;
+    @include flex-col-start-center;
+    .card-image-wrapper {
+      .project-img {
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+        background-image: url("../../../assets/images/homefinder.png");
+      }
+    }
+
+    .card-content {
+      text-align: left;
+      padding: 30px;
+      @include flex-col-start-center;
+
+      .tech-title {
+        margin-top: 20px;
+        font-weight: 300;
+        text-transform: uppercase;
+      }
+    }
+  }
+}
+
+@media (min-width: $smallTablet) {
+  .project-cards-wrapper {
+    margin-top: 35px;
+    gap: 50px;
+    .project-card {
+      border-radius: 12px;
+      @include flex-col-start-center;
+      .card-image-wrapper {
+        .project-img {
+          border-top-left-radius: 12px;
+          border-top-right-radius: 12px;
+        }
+      }
+
+      .card-content {
+        text-align: left;
+
+        .tech-title {
+          margin-top: 30px;
+          font-size: 1.1rem;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: $laptop) {
+  .project-cards-wrapper {
+    margin-top: 35px;
+    gap: 50px;
+    .project-card {
+      border-radius: 12px;
+      @include flex-row-between-start;
+      width: 100%;
+      .card-image-wrapper {
+        max-width: 50%;
+        height: auto;
+        min-height: 704px;
+        display: flex;
+        // align-items: center;
+        overflow: hidden;
+        .project-img {
+          // flex-shrink: 0;
+          min-width: 100%;
+          min-height: 100%;
+          // object-fit: cover;
+          background-image: url("../../../assets/images/homefinder.png");
+          border-top-left-radius: 12px;
+          border-top-right-radius: 12px;
+        }
+      }
+
+      .card-content {
+        max-width: 50%;
+        flex-grow: 1;
+        text-align: left;
+
+        .tech-title {
+          margin-top: 30px;
+          font-size: 1.1rem;
+        }
+      }
+    }
+  }
+}

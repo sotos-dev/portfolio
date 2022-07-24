@@ -1,0 +1,32 @@
+@import "../../../styles/breakpoints";
+@import "../../../styles/colors";
+@import "../../../styles/fonts";
+
+.over-title {
+  color: $blue;
+  font-family: $mono;
+  font-size: 1.1rem;
+}
+
+@media (min-width: $smallTablet) {
+  .over-title {
+    color: $blue;
+    font-family: $mono;
+    font-size: 1.2rem;
+  }
+}
+
+@media (min-width: $tablet) {
+  .over-title {
+    color: $blue;
+    font-family: $mono;
+  }
+}
+
+@media (min-width: $laptop) {
+  .over-title {
+    color: $blue;
+    font-family: $mono;
+    font-size: 1.3rem;
+  }
+}

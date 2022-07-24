@@ -1,0 +1,9 @@
+@import "../../../styles/breakpoints";
+@import "../../../styles/mixins";
+
+.packages-wrapper {
+  margin-top: 15px;
+  @include flex-row-start;
+  flex-wrap: wrap;
+  gap: 15px;
+}

@@ -1,0 +1,18 @@
+@import "../../../styles/breakpoints";
+
+.item {
+  padding: 10px 20px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+@media (min-width: $smallTablet) {
+  .item {
+    font-size: 1.1rem;
+  }
+}
+@media (min-width: $laptop) {
+  .item {
+    font-size: 1.2rem;
+  }
+}

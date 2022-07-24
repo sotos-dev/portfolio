@@ -1,3 +1,7 @@
+import RecipieImg from "../assets/images/recipie.png"
+import Traveloop from "../assets/images/traveloop.png"
+import Homefinder from "../assets/images/homefinder.png"
+
 export const navLinks = [
   {
     linkName: "Home",
@@ -89,22 +93,67 @@ export const otherSkills = [
 
 export const projectsInfo = [
   {
-    projectName: "Recipie",
+    name: "HomeFinder",
+    overTitle: "Search properties",
     description:
-      "A CRA project that you can use to save your favorite food recipies",
-    stackUsed: ["React", "Firestore", "SASS"],
+      "HomeFinder is a NextJS app where you can find  rental or for sale properties and you can filter and sorting results based on location, bedroom number, price and accommodation type. It uses real data from Zoopla API. HomeFinder is completely responsive feel free to adjust your browser's viewport width",
+    id: "homefinder",
+    image: Homefinder,
+    stackUsed: [
+      { stackName: "React", stackId: "react" },
+      { stackName: "Next.js", stackId: "next" },
+      { stackName: "Firestore", stackId: "firestore" },
+      { stackName: "Tailwind", stackId: "tailwind" },
+    ],
+    packagesUsed: [
+      { packageName: "axios", packageId: "axios" },
+      { packageName: "millify", packageId: "millify" },
+      { packageName: "nprogress", packageId: "nprogress" },
+      { packageName: "react-icons", packageId: "react-icons" },
+    ],
   },
   {
-    projectName: "HomeFinder",
+    name: "Recipie",
+    overTitle: "Save your recipies",
     description:
-      "A CRA project that you can use to save your favorite food recipies",
-    stackUsed: ["React", "Next.js", "Firestore", "Tailwind"],
+      "Recipie is A CRA (create-react-app) app where you can save food recipies and also favorite recipies to your favorites tab. Your recipies are saved on google's no-sql firestore database. Recipie is completely responsive feel free to adjust your browser's viewport width",
+    image: RecipieImg,
+    id: "recipie",
+    stackUsed: [
+      { stackName: "React", stackId: "react" },
+      { stackName: "Firestore", stackId: "firestore" },
+      { stackName: "SASS", stackId: "sass" },
+    ],
+    packagesUsed: [
+      { packageName: "framer-motion", packageId: "framer-motion" },
+      { packageName: "react-spinners", packageId: "react-spinners" },
+      { packageName: "the-new-css-reset", packageId: "the-new-css-reset" },
+      { packageName: "react-icons", packageId: "react-icons" },
+      { packageName: "uuid", packageId: "uuid" },
+    ],
   },
   {
-    projectName: "Traveloop",
+    name: "Traveloop",
+    overTitle: "Read travel posts",
     description:
-      "A CRA project that you can use to save your favorite food recipies",
-    stackUsed: ["React", "Next.js", "Firestore", "SASS"],
+      "Traveloop is a NextJS blog that displays blog categories, blog posts and individual post pages based on the same template. All data is drawn from firestore the no-sql database of firebase. Traveloop is completely responsive feel free to adjust your browser's viewport width",
+    image: Traveloop,
+    id: "traveloop",
+    stackUsed: [
+      { stackName: "React", stackId: "react" },
+      { stackName: "Next.js", stackId: "next" },
+      { stackName: "Firestore", stackId: "firestore" },
+      { stackName: "Firebase Auth", stackId: "firebase-auth" },
+      { stackName: "SASS", stackId: "sass" },
+    ],
+    packagesUsed: [
+      { packageName: "yup", packageId: "yup" },
+      { packageName: "react-hook-form", packageId: "react-hook-form" },
+      { packageName: "@hookform/resolvers", packageId: "@hookform/resolvers" },
+      { packageName: "framer-motion", packageId: "framer-motion" },
+      { packageName: "react-icons", packageId: "react-icons" },
+      { packageName: "the-new-css-reset", packageId: "the-new-css-reset" },
+    ],
   },
 ]
 
