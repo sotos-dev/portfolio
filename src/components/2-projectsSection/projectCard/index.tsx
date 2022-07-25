@@ -40,11 +40,11 @@ const ProjectCard = ({ projectsInfo }: IProjectCardProps) => {
                 className={styles["project-card"]}
                 style={{ backgroundColor: theme.projectCardBg }}>
                 <div className={styles["card-image-wrapper"]}>
-                  {/* <img
+                  <img
                     src={project.image}
                     alt={project.name}
                     className={styles["project-img"]}
-                  /> */}
+                  />
                 </div>
                 <div className={styles["card-content"]}>
                   <ProjectOverTitle text={project.overTitle} />

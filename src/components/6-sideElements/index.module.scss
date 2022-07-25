@@ -1,0 +1,10 @@
+@import "../../styles/mixins";
+@import "../../styles/mixins";
+
+.side-elements {
+  position: absolute;
+  top: 100px;
+  left: 100px;
+  @include flex-col-start-start;
+  gap: 30px;
+}

@@ -1,0 +1,71 @@
+@import "../../styles/breakpoints";
+@import "../../styles/mixins";
+
+.contact-section {
+  margin-top: 20px;
+  .contact-wrapper {
+    @include flex-col-center;
+    text-align: center;
+
+    .under-title {
+      font-weight: 300;
+      margin-top: 10px;
+      max-width: 400px;
+    }
+    .button-flex {
+      margin-top: 20px;
+      @include flex-col-center;
+      gap: 20px;
+    }
+  }
+}
+
+@media (min-width: $tablet) {
+  .contact-section {
+    margin-top: 30px;
+    .contact-wrapper {
+      .under-title {
+        max-width: 440px;
+        font-size: 1.1rem;
+      }
+
+      .button-flex {
+        margin-top: 30px;
+        @include flex-row-center;
+        gap: 20px;
+      }
+    }
+  }
+}
+
+@media (min-width: $laptop) {
+  .contact-section {
+    .contact-wrapper {
+      .under-title {
+        max-width: 480px;
+        font-size: 1.2rem;
+      }
+
+      .button-flex {
+        margin-top: 40px;
+        gap: 30px;
+      }
+    }
+  }
+}
+
+@media (min-width: $desktop) {
+  .contact-section {
+    margin-top: 100px;
+    .contact-wrapper {
+      .under-title {
+        max-width: 520px;
+        font-size: 1.3rem;
+      }
+
+      .button-flex {
+        gap: 40px;
+      }
+    }
+  }
+}

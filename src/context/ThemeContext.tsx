@@ -44,6 +44,7 @@ export const themes = {
     githubIcon: GithubLight,
     projectCardBg: "#fff",
     projectCardTech: "#fff",
+    footerBg: "#eceef7",
   },
   dark: {
     backgroundColor: "#0b1736",
@@ -67,6 +68,7 @@ export const themes = {
     githubIcon: GithubDark,
     projectCardBg: "#202e51",
     projectCardTech: "#35456F",
+    footerBg: "#202E51",
   },
 }
 

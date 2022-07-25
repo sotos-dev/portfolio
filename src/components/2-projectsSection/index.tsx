@@ -10,7 +10,7 @@ export interface IProjectsSectionProps {}
 const ProjectsSection = ({}: IProjectsSectionProps) => {
   return (
     <>
-      <section className={`${styles["projects-section"]}`}>
+      <section className={styles["projects-section"]}>
         <Container>
           <div className={styles["projects-wrapper"]}>
             <OverTitle text='My Work' />

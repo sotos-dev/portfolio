@@ -3,7 +3,44 @@
 @import "../../styles/breakpoints";
 
 .projects-section {
+  margin-top: 30px;
   .projects-wrapper {
     text-align: center;
+  }
+}
+
+@media (min-width: $smallTablet) {
+  .projects-section {
+    margin-top: 40px;
+    .projects-wrapper {
+      text-align: center;
+    }
+  }
+}
+
+@media (min-width: $tablet) {
+  .projects-section {
+    margin-top: 50px;
+    .projects-wrapper {
+      text-align: center;
+    }
+  }
+}
+
+@media (min-width: $laptop) {
+  .projects-section {
+    margin-top: 100px;
+    .projects-wrapper {
+      text-align: center;
+    }
+  }
+}
+
+@media (min-width: $desktop) {
+  .projects-section {
+    margin-top: 200px;
+    .projects-wrapper {
+      text-align: center;
+    }
   }
 }

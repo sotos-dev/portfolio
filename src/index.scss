@@ -12,27 +12,31 @@ body,
   box-sizing: border-box;
 }
 
-// Global style for margins between website's sections
+// Hero inner sections vertical spacing
 .spacer {
-  margin: 50px 0;
-}
-@media (min-width: $smallTablet) {
-  .spacer {
-    margin: 60px 0;
-  }
+  margin-top: 50px;
 }
 @media (min-width: $tablet) {
   .spacer {
-    margin: 100px 0;
+    margin-top: 100px;
   }
 }
 @media (min-width: $laptop) {
   .spacer {
-    margin: 120px 0;
+    margin-top: 150px;
   }
 }
-@media (min-width: $desktop) {
-  .spacer {
-    margin: 140px 0;
+// Major sections vertical spacing
+.section-spacer {
+  margin-top: 40px;
+}
+@media (min-width: $tablet) {
+  .section-spacer {
+    margin-top: 50px;
+  }
+}
+@media (min-width: $laptop) {
+  .section-spacer {
+    margin-top: 160px;
   }
 }
