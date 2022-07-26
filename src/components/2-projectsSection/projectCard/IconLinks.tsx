@@ -1,5 +1,6 @@
 import styles from "./iconLinks.module.scss"
 import { FiGithub, FiExternalLink } from "react-icons/fi"
+import { useTheme } from "../../../context/ThemeContext"
 
 export interface IIconLinksProps {
   githubLink: string
@@ -7,6 +8,8 @@ export interface IIconLinksProps {
 }
 
 const IconLinks = ({ githubLink, websiteLink }: IIconLinksProps) => {
+  const { theme } = useTheme()
+
   return (
     <>
       <div className={styles["icons-wrapper"]}>
@@ -15,14 +18,20 @@ const IconLinks = ({ githubLink, websiteLink }: IIconLinksProps) => {
           href={githubLink}
           title='Github'
           className={styles["links"]}>
-          <FiGithub className={styles["link-icon"]} />
+          <FiGithub
+            style={{ color: theme.projectIcon }}
+            className={styles["link-icon"]}
+          />
         </a>
         <a
           target='_blank'
           href={websiteLink}
           title='Website'
           className={styles["links"]}>
-          <FiExternalLink className={styles["link-icon"]} />
+          <FiExternalLink
+            style={{ color: theme.projectIcon }}
+            className={styles["link-icon"]}
+          />
         </a>
       </div>
     </>

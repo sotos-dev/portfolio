@@ -19,11 +19,13 @@ import {
   TopBgLight,
   HeroGraphicLight,
   HeroGraphicDark,
+  ContactLight,
+  ContactDark,
 } from "../utils/images"
 // Themes
 export const themes = {
   light: {
-    backgroundColor: "#f2f4fd",
+    backgroundColor: "#fff",
     color: "#1e293b",
     skillsBg: "#fff",
     skillsOutline: "#D9D9D9",
@@ -35,7 +37,7 @@ export const themes = {
     moonColor: "#1e293b",
     logo: LogoBlack,
     heroBg: TopBgLight,
-    mobileNav: "#83cbff",
+    mobileNav: "#fff",
     reactIcon: ReactLight,
     nextIcon: NextLight,
     tailwindIcon: TailwindLight,
@@ -44,10 +46,13 @@ export const themes = {
     githubIcon: GithubLight,
     projectCardBg: "#fff",
     projectCardTech: "#fff",
+    contactBg: ContactLight,
     footerBg: "#eceef7",
+    sideLine: "rgba(0,0,0,0.3)",
+    projectIcon: "rgba(0,0,0, 0.8)",
   },
   dark: {
-    backgroundColor: "#0b1736",
+    backgroundColor: "#101C3C",
     color: "#fff",
     skillsBg: "#202e51",
     skillsOutline: "#415487",
@@ -59,7 +64,7 @@ export const themes = {
     moonColor: "#1e293b",
     logo: LogoWhite,
     heroBg: TopBgDark,
-    mobileNav: "#83cbff",
+    mobileNav: "#202E51",
     reactIcon: ReactDark,
     nextIcon: NextDark,
     tailwindIcon: TailwindDark,
@@ -68,7 +73,10 @@ export const themes = {
     githubIcon: GithubDark,
     projectCardBg: "#202e51",
     projectCardTech: "#35456F",
+    contactBg: ContactDark,
     footerBg: "#202E51",
+    sideLine: "rgba(255,255,255, 0.8)",
+    projectIcon: "#fff",
   },
 }
 

@@ -16,6 +16,8 @@ import TopBgLight from "../assets/images/top-section-light.jpg"
 import TopBgDark from "../assets/images/top-section-dark.jpg"
 import HeroGraphicLight from "../assets/images/hero-graphic-light.png"
 import HeroGraphicDark from "../assets/images/hero-graphic-dark.png"
+import ContactLight from "../assets/images/contact-light.jpg"
+import ContactDark from "../assets/images/contact-dark.jpg"
 
 export {
   HeroGraphicLight,
@@ -36,4 +38,6 @@ export {
   LogoBlack,
   TopBgDark,
   TopBgLight,
+  ContactLight,
+  ContactDark,
 }

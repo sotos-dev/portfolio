@@ -9,15 +9,30 @@ import { useEffect, useRef, useState } from "react"
 
 const Navbar = () => {
   const [isNavButtonOpen, setIsNavButtonOpen] = useState(false)
-  const buttonRef = useRef<HTMLDivElement>(null)
+  const menuButton = useRef<HTMLDivElement>(null)
+
+  useEffect(() => {
+    window.addEventListener("click", (event: any) => {
+      event.stopPropagation()
+      if (isNavButtonOpen === true) {
+        // setIsNavButtonOpen(false)
+        console.log(event.target)
+      }
+    })
+  }, [])
 
   return (
     <>
-      <header className={styles["navbar-wrapper"]}>
+      <header id='home' className={styles["navbar-wrapper"]}>
         {/* Hides over [this many pixels] */}
-        {/* <div ref={buttonRef}> */}
-        <SandwichButton setIsNavButtonOpen={setIsNavButtonOpen} />
-        {/* </div> */}
+        <div
+          ref={menuButton}
+          style={{ zIndex: "30" }}
+          onClick={() => {
+            setIsNavButtonOpen((prev) => (prev = !prev))
+          }}>
+          <SandwichButton />
+        </div>
         {/* Logo */}
         <Logo />
         {/* Hides over [this many pixels] */}

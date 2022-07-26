@@ -7,13 +7,13 @@
   @include flex-col-center;
   gap: 40px;
   .project-card {
+    box-shadow: 0 0 12px 0 rgba(0, 0, 0, 0.1);
     border-radius: 8px;
     @include flex-col-start-center;
     .card-image-wrapper {
       .project-img {
         border-top-left-radius: 8px;
         border-top-right-radius: 8px;
-        background-image: url("../../../assets/images/homefinder.png");
       }
     }
 
@@ -76,7 +76,8 @@
           object-fit: cover;
 
           border-top-left-radius: 12px;
-          border-top-right-radius: 12px;
+          border-top-right-radius: 0;
+          border-bottom-left-radius: 12px;
         }
       }
 
@@ -84,14 +85,9 @@
         flex-grow: 1;
         text-align: left;
 
-        .tech-wrapper {
-          display: flex;
-          flex-direction: row;
-          gap: 20px;
-          .tech-title {
-            margin-top: 30px;
-            font-size: 1.1rem;
-          }
+        .tech-title {
+          margin-top: 30px;
+          font-size: 1.1rem;
         }
       }
     }

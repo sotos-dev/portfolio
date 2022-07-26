@@ -1,6 +1,29 @@
+@import "../../styles/breakpoints";
+
 .hero-section {
   width: 100%;
   background-size: cover;
   background-repeat: no-repeat;
-  position: relative;
+  padding-bottom: 50px;
+}
+
+@media (min-width: $smallTablet) {
+  .hero-section {
+    padding-bottom: 75px;
+  }
+}
+
+@media (min-width: $laptop) {
+  .hero-section {
+    padding-bottom: 100px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .hero-section {
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-bottom: 250px;
+  }
 }

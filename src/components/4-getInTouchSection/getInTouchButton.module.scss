@@ -8,7 +8,9 @@
   cursor: pointer;
   width: 300px;
   @include flex-row-start-center;
-  padding: 15px 30px;
+  padding: 0 30px;
+  height: 65px;
+  border-radius: 8px;
   gap: 30px;
   .icon {
     max-width: 25px;
@@ -26,7 +28,6 @@
 @media (min-width: $smallTablet) {
   .button-wrapper {
     width: 320px;
-    padding: 20px 30px;
 
     .icon {
       max-width: 30px;
@@ -41,9 +42,8 @@
 @media (min-width: $tablet) {
   .button-wrapper {
     @include flex-row-center;
-
+    height: 70px;
     width: 320px;
-    padding: 20px 30px;
 
     .icon {
       max-width: 30px;
@@ -58,7 +58,7 @@
 @media (min-width: $laptop) {
   .button-wrapper {
     width: 350px;
-    padding: 20px 30px;
+    height: 80px;
 
     .icon {
       max-width: 35px;

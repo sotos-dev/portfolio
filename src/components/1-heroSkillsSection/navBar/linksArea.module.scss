@@ -1,5 +1,6 @@
 @import "../../../styles/breakpoints";
 @import "../../../styles/mixins";
+@import "../../../styles/colors";
 
 .links-area-wrapper {
   display: none;
@@ -15,6 +16,10 @@
 
       .nav-link {
         font-size: 1.1rem;
+
+        &:hover {
+          color: $blue;
+        }
       }
     }
   }

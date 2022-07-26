@@ -6,6 +6,7 @@ export interface IGetInTouchButtonsProps {
   color: string
   bgColor: string
   link: string
+  borderColor: string
 }
 
 const GetInTouchButtons = ({
@@ -14,6 +15,7 @@ const GetInTouchButtons = ({
   bgColor,
   color,
   link,
+  borderColor,
 }: IGetInTouchButtonsProps) => {
   return (
     <>
@@ -21,7 +23,11 @@ const GetInTouchButtons = ({
         href={link}
         target='_blank'
         className={styles["button-wrapper"]}
-        style={{ backgroundColor: bgColor, color: color }}>
+        style={{
+          backgroundColor: bgColor,
+          color: color,
+          border: `2px solid ${borderColor}`,
+        }}>
         <img src={icon} alt={icon} className={styles["icon"]} />
         <button className={styles["button"]}>{text}</button>
       </a>

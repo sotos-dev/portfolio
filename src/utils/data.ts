@@ -1,27 +1,27 @@
-import RecipieImg from "../assets/images/recipie.png"
-import Traveloop from "../assets/images/traveloop.png"
-import Homefinder from "../assets/images/homefinder.png"
+import RecipieImg from "../assets/images/recipie-project.png"
+import Traveloop from "../assets/images/traveloop-project.png"
+import Homefinder from "../assets/images/homefinder-project.png"
 
 export const navLinks = [
   {
     linkName: "Home",
     id: "home",
-    divider: true,
+    destination: "#home",
   },
   {
     linkName: "Skills",
     id: "skills",
-    divider: true,
+    destination: "#skills",
   },
   {
     linkName: "Work",
     id: "work",
-    divider: true,
+    destination: "#work",
   },
   {
     linkName: "Get in Touch",
     id: "getintouch",
-    divider: false,
+    destination: "#contact",
   },
 ]
 

@@ -1,9 +1,12 @@
 @import "../../../styles/breakpoints";
+@import "../../../styles/fonts";
 
 .item {
   padding: 10px 20px;
   border-radius: 8px;
   text-align: center;
+  font-family: $mono;
+  font-size: 0.9rem;
 }
 
 @media (min-width: $smallTablet) {

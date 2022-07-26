@@ -23,7 +23,9 @@ const HeroSection = ({}: IHeroSectionProps) => {
             text="I'm a Front-end Developer who loves consistency and likes working with technologies and conventions that boost productivity and lead to better, faster and
           more maintainable results."
           />
-          <button className={styles["see-work-button"]}>See my work</button>
+          <a href='#work'>
+            <button className={styles["see-work-button"]}>See my work</button>
+          </a>
         </div>
         {/* Image Area */}
         <div className={styles["hero-images"]}>

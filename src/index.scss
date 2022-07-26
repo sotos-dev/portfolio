@@ -12,6 +12,10 @@ body,
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 // Hero inner sections vertical spacing
 .spacer {
   margin-top: 50px;
@@ -24,19 +28,5 @@ body,
 @media (min-width: $laptop) {
   .spacer {
     margin-top: 150px;
-  }
-}
-// Major sections vertical spacing
-.section-spacer {
-  margin-top: 40px;
-}
-@media (min-width: $tablet) {
-  .section-spacer {
-    margin-top: 50px;
-  }
-}
-@media (min-width: $laptop) {
-  .section-spacer {
-    margin-top: 160px;
   }
 }

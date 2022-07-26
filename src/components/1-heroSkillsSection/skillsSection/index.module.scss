@@ -2,6 +2,7 @@
 @import "../../../styles/mixins";
 
 .skills-section {
+  padding-top: 20px;
   width: 100%;
   text-align: center;
 
@@ -37,6 +38,7 @@
 
 @media (min-width: $laptop) {
   .skills-section {
+    padding-top: 50px;
     .under-title {
       max-width: 800px;
       font-size: 1.3rem;
@@ -64,7 +66,7 @@
       display: block;
       .react-icon {
         position: absolute;
-        top: -20px;
+        top: 0px;
         left: 255px;
         max-width: 100px;
       }
@@ -82,7 +84,7 @@
       }
       .sass-icon {
         position: absolute;
-        top: -20px;
+        top: 0px;
         right: 255px;
         max-width: 100px;
       }

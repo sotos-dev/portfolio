@@ -4,6 +4,7 @@ interface INavProps {
   navLinks: {
     linkName: string
     id: string
+    destination: string
   }[]
 }
 
@@ -15,7 +16,7 @@ const Nav = ({ navLinks }: INavProps) => {
           {navLinks.map((navLink) => {
             return (
               <li key={navLink.id}>
-                <a href='/' className={styles["nav-link"]}>
+                <a href={navLink.destination} className={styles["nav-link"]}>
                   {navLink.linkName}
                 </a>
               </li>

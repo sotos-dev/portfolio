@@ -1,6 +1,5 @@
 import HeroSkillsSection from "./components/1-heroSkillsSection"
 import { useTheme } from "./context/ThemeContext"
-import styles from "./app.module.scss"
 import ProjectsSection from "./components/2-projectsSection"
 import GetInTouchSection from "./components/4-getInTouchSection"
 import Footer from "./components/5-footer"

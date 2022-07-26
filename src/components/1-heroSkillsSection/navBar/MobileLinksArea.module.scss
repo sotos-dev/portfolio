@@ -3,36 +3,47 @@
 @import "../../../styles/colors";
 
 .links-area-wrapper {
-  position: absolute;
-  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.25);
-  border-top-right-radius: 8px;
-  border-bottom-right-radius: 8px;
-  left: -20px;
-  top: 100px;
+  position: fixed;
+  box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.25);
+  left: 0;
+  top: 0;
   transform: translateX(-100%);
   transition: 300ms all;
-  .links-wrapper {
-    .nav-links {
+  width: 70%;
+  height: 100vh;
+  z-index: 30;
+  @include flex-col-start-start;
+  gap: 20px;
+  .logo-area {
+    width: 100%;
+    .logo {
       padding: 30px;
+    }
+    .divider-line {
+      width: 100%;
+      height: 1px;
+      background-color: rgba(0, 0, 0, 0.25);
+    }
+  }
+  .links-wrapper {
+    width: 100%;
+    .nav-links {
+      padding: 25px;
       display: block;
     }
-    .divider {
-      height: 1px;
-      width: 100%;
-      background-color: $white;
-    }
+  }
+  .social-links {
+    @include flex-row-center;
+    gap: 30px;
+    padding: 30px;
+    font-size: 2rem;
+    margin: auto 0;
   }
 }
 
 .links-area-wrapper-active {
-  transform: translateX(35px);
+  transform: translateX(0);
   transition: 300ms all;
-}
-
-@media (min-width: $smallTablet) {
-  .links-area-wrapper-active {
-    transform: translateX(55px);
-  }
 }
 
 @media (min-width: $tablet) {

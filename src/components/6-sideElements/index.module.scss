@@ -8,14 +8,17 @@
 @media (min-width: 1700px) {
   .side-elements {
     position: fixed;
-    top: 500px;
-    left: 100px;
+    top: 305px;
+    left: 5%;
     @include flex-col-center;
     gap: 30px;
 
+    .links {
+      font-size: 1.7rem;
+    }
+
     .vertical-line {
       height: 200px;
-      background-color: rgba(0, 0, 0, 0.3);
       width: 1px;
     }
   }
