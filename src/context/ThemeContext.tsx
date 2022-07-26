@@ -21,6 +21,8 @@ import {
   HeroGraphicDark,
   ContactLight,
   ContactDark,
+  MenuButtonLight,
+  MenuButtonDark,
 } from "../utils/images"
 // Themes
 export const themes = {
@@ -50,6 +52,7 @@ export const themes = {
     footerBg: "#eceef7",
     sideLine: "rgba(0,0,0,0.3)",
     projectIcon: "rgba(0,0,0, 0.8)",
+    menuButton: MenuButtonLight,
   },
   dark: {
     backgroundColor: "#101C3C",
@@ -77,6 +80,7 @@ export const themes = {
     footerBg: "#202E51",
     sideLine: "rgba(255,255,255, 0.8)",
     projectIcon: "#fff",
+    menuButton: MenuButtonDark,
   },
 }
 

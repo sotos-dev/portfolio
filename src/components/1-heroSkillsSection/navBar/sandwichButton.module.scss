@@ -2,8 +2,9 @@
 
 .menu-icon-wrapper {
   .menu-icon {
-    font-size: 2rem;
+    max-width: 30px;
     cursor: pointer;
+    display: block;
   }
 }
 

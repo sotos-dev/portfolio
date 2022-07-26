@@ -9,36 +9,38 @@ import { useEffect, useRef, useState } from "react"
 
 const Navbar = () => {
   const [isNavButtonOpen, setIsNavButtonOpen] = useState(false)
-  const menuButton = useRef<HTMLDivElement>(null)
+  const menuButton = useRef<HTMLImageElement>(null)
+  const refLink = useRef<HTMLDivElement>(null)
 
   useEffect(() => {
-    window.addEventListener("click", (event: any) => {
-      event.stopPropagation()
-      if (isNavButtonOpen === true) {
-        // setIsNavButtonOpen(false)
-        console.log(event.target)
+    const closeMenu = (e: any) => {
+      console.log(e.target)
+
+      if (e.target !== refLink.current && e.target !== menuButton.current) {
+        setIsNavButtonOpen(false)
       }
-    })
+    }
+
+    document.body.addEventListener("click", closeMenu)
+
+    return () => document.body.removeEventListener("click", closeMenu)
   }, [])
 
   return (
     <>
       <header id='home' className={styles["navbar-wrapper"]}>
         {/* Hides over [this many pixels] */}
-        <div
-          ref={menuButton}
-          style={{ zIndex: "30" }}
-          onClick={() => {
-            setIsNavButtonOpen((prev) => (prev = !prev))
-          }}>
-          <SandwichButton />
-        </div>
+        <SandwichButton
+          setIsNavButtonOpen={setIsNavButtonOpen}
+          menuButton={menuButton}
+        />
         {/* Logo */}
         <Logo />
         {/* Hides over [this many pixels] */}
         <MobileLinksArea
           navLinks={navLinks}
           isNavButtonOpen={isNavButtonOpen}
+          refLink={refLink}
         />
         {/* {/* Shows over [this many pixels] */}
         <LinksArea navLinks={navLinks} />

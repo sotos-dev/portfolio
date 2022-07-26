@@ -30,6 +30,7 @@
     .nav-links {
       padding: 25px;
       display: block;
+      font-weight: 500;
     }
   }
   .social-links {
@@ -44,6 +45,19 @@
 .links-area-wrapper-active {
   transform: translateX(0);
   transition: 300ms all;
+}
+
+@media (min-width: $smallTablet) {
+  .links-area-wrapper {
+    .links-wrapper {
+      .nav-links {
+        font-size: 1.2rem;
+      }
+    }
+    .social-links {
+      font-size: 2.4rem;
+    }
+  }
 }
 
 @media (min-width: $tablet) {

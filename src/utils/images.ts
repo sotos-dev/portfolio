@@ -18,6 +18,8 @@ import HeroGraphicLight from "../assets/images/hero-graphic-light.png"
 import HeroGraphicDark from "../assets/images/hero-graphic-dark.png"
 import ContactLight from "../assets/images/contact-light.jpg"
 import ContactDark from "../assets/images/contact-dark.jpg"
+import MenuButtonLight from "../assets/images/menu-button-light.svg"
+import MenuButtonDark from "../assets/images/menu-button-dark.svg"
 
 export {
   HeroGraphicLight,
@@ -40,4 +42,6 @@ export {
   TopBgLight,
   ContactLight,
   ContactDark,
+  MenuButtonLight,
+  MenuButtonDark,
 }
