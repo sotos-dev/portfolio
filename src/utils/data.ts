@@ -111,6 +111,9 @@ export const projectsInfo = [
       { packageName: "nprogress", packageId: "nprogress" },
       { packageName: "react-icons", packageId: "react-icons" },
     ],
+    githubLink:
+      "https://github.com/this-savannah/HomeFinder-NextJS-Tailwind-ZooplaAPI",
+    websiteLink: "https://home-finder-next-js-tailwind-zoopla-api.vercel.app/",
   },
   {
     name: "Recipie",
@@ -131,6 +134,8 @@ export const projectsInfo = [
       { packageName: "react-icons", packageId: "react-icons" },
       { packageName: "uuid", packageId: "uuid" },
     ],
+    githubLink: "https://github.com/this-savannah/Recipie-CRA",
+    websiteLink: "https://this-recipie.netlify.app/",
   },
   {
     name: "Traveloop",
@@ -154,6 +159,8 @@ export const projectsInfo = [
       { packageName: "react-icons", packageId: "react-icons" },
       { packageName: "the-new-css-reset", packageId: "the-new-css-reset" },
     ],
+    githubLink: "https://github.com/this-savannah/Traveloop",
+    websiteLink: "https://traveloop.vercel.app/",
   },
 ]
 

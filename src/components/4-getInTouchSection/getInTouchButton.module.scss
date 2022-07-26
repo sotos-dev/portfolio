@@ -1,7 +1,7 @@
-@import "../styles/colors";
-@import "../styles/breakpoints";
-@import "../styles/fonts";
-@import "../styles/mixins";
+@import "../../styles/colors";
+@import "../../styles/breakpoints";
+@import "../../styles/fonts";
+@import "../../styles/mixins";
 
 .button-wrapper {
   display: block;
@@ -19,6 +19,7 @@
     font-weight: 500;
     font-size: 0.9rem;
     font-family: $mono;
+    cursor: pointer;
   }
 }
 

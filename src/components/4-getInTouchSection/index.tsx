@@ -1,5 +1,5 @@
 import Container from "../../ui/Container"
-import GetInTouchButtons from "../../ui/GetInTouchButton"
+import GetInTouchButtons from "./GetInTouchButton"
 import SectionTitle from "../../ui/SectionTitle"
 import styles from "./index.module.scss"
 import GithubIcon from "../../assets/images/github.png"
@@ -21,7 +21,7 @@ const GetInTouchSection = ({}: IGetInTouchSectionProps) => {
             </p>
             <div className={styles["button-flex"]}>
               <GetInTouchButtons
-                text='message me on github'
+                text='check out my github'
                 icon={GithubIcon}
                 bgColor='#fff'
                 color='#2a5fe4'

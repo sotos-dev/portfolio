@@ -1,5 +1,6 @@
 import React from "react"
 import { useTheme } from "../../../context/ThemeContext"
+import IconLinks from "./IconLinks"
 import styles from "./index.module.scss"
 import ProjectDescription from "./ProjectDescription"
 import ProjectOverTitle from "./ProjectOverTitle"
@@ -21,6 +22,8 @@ interface ProjectCardProps {
     packageName: string
     packageId: string
   }[]
+  githubLink: string
+  websiteLink: string
 }
 
 export interface IProjectCardProps {
@@ -47,6 +50,10 @@ const ProjectCard = ({ projectsInfo }: IProjectCardProps) => {
                   />
                 </div>
                 <div className={styles["card-content"]}>
+                  <IconLinks
+                    githubLink={project.githubLink}
+                    websiteLink={project.websiteLink}
+                  />
                   <ProjectOverTitle text={project.overTitle} />
                   <ProjectTitle text={project.name} />
                   <ProjectDescription text={project.description} />
