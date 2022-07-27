@@ -1,6 +1,7 @@
 @import "../../../styles/breakpoints";
 @import "../../../styles/colors";
 @import "../../../styles/mixins";
+@import "../../../styles/fonts";
 
 .hero-section {
   @include flex-col-start-start;
@@ -17,6 +18,7 @@
       font-weight: 500;
       text-transform: uppercase;
       transition: 300ms background-color;
+      font-family: $mono;
       &:hover {
         background-color: $hoverBlue;
       }

@@ -12,9 +12,12 @@
     left: 5%;
     @include flex-col-center;
     gap: 30px;
-
     .links {
+      transition: 300ms transform;
       font-size: 1.7rem;
+      &:hover {
+        transform: scale(120%);
+      }
     }
 
     .vertical-line {

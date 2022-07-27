@@ -113,7 +113,7 @@ export const projectsInfo = [
     ],
     githubLink:
       "https://github.com/this-savannah/HomeFinder-NextJS-Tailwind-ZooplaAPI",
-    websiteLink: "https://home-finder-next-js-tailwind-zoopla-api.vercel.app/",
+    websiteLink: "https://homefinder-psi.vercel.app/",
   },
   {
     name: "Recipie",
