@@ -7,7 +7,7 @@
 1. React with CRA
 2. Typescript
 
-# Libraries/Packagies:
+## Libraries/Packagies:
 
 1. sass -> because it rocks!
 2. the-new-css-reset -> to reset and normalize css styles between browsers
