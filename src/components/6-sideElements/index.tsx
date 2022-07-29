@@ -10,7 +10,7 @@ const SideElements = ({}: ISideElementsProps) => {
   return (
     <>
       <div className={styles["side-elements"]}>
-        <a href='https://github.com/this-savannah' target='_blank'>
+        <a href='https://github.com/sotos-dev' target='_blank'>
           <FiGithub className={styles["links"]} />
         </a>
         <a

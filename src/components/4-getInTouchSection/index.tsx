@@ -34,7 +34,7 @@ const GetInTouchSection = ({}: IGetInTouchSectionProps) => {
                 icon={GithubIcon}
                 bgColor='#fff'
                 color='#2a5fe4'
-                link='https://github.com/this-savannah'
+                link='https://github.com/sotos-dev'
                 borderColor='#2a5fe4'
               />
               <GetInTouchButton
