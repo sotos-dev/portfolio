@@ -9,7 +9,7 @@
 
 ## Libraries/Packagies:
 
-1. sass -> because it rocks!
+1. sass -> more flexible way to handle css
 2. the-new-css-reset -> to reset and normalize css styles between browsers
 3. react-icons -> fast and reliable way to include icons in your app
 
