@@ -31,6 +31,10 @@ export const skillsData = [
     id: "nextjs",
   },
   {
+    skillName: "Graphic Design",
+    id: "git",
+  },
+  {
     skillName: "Figma",
     id: "figma",
   },
@@ -45,11 +49,6 @@ export const skillsData = [
   {
     skillName: "HMTL",
     id: "html",
-  },
-
-  {
-    skillName: "Graphic Design",
-    id: "git",
   },
   {
     skillName: "SASS",
