@@ -27,28 +27,16 @@ export const navLinks = [
 
 export const skillsData = [
   {
-    skillName: "React",
-    id: "react",
+    skillName: "UX/UI Design",
+    id: "nextjs",
   },
   {
-    skillName: "Typescript",
-    id: "typescript",
+    skillName: "Figma",
+    id: "figma",
   },
   {
     skillName: "Javascript",
     id: "javascript",
-  },
-  {
-    skillName: "NextJS",
-    id: "nextjs",
-  },
-  {
-    skillName: "Svelte",
-    id: "svelte",
-  },
-  {
-    skillName: "Github",
-    id: "github",
   },
   {
     skillName: "CSS",
@@ -58,18 +46,15 @@ export const skillsData = [
     skillName: "HMTL",
     id: "html",
   },
+
   {
-    skillName: "Git",
+    skillName: "Graphic Design",
     id: "git",
   },
   {
     skillName: "SASS",
     id: "sass",
-  },
-  {
-    skillName: "Tailwind",
-    id: "tailwind",
-  },
+  }
 ]
 
 export const otherSkills = [
@@ -78,16 +63,16 @@ export const otherSkills = [
     id: "vscode",
   },
   {
-    skillName: "Firebase",
-    id: "firebase",
+    skillName: "React",
+    id: "react",
   },
   {
-    skillName: "Figma",
-    id: "figma",
+    skillName: "Github",
+    id: "github",
   },
   {
-    skillName: "Adobe XD",
-    id: "adobexd",
+    skillName: "Tailwind",
+    id: "tailwind",
   },
 ]
 
