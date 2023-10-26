@@ -20,9 +20,9 @@ const SkillsSection = ({ skillsData, otherSkills }: ISkillsSectionProps) => {
   return (
     <>
       <section id='skills' className={`${styles["skills-section"]} spacer`}>
-        <SectionTitle text='My Stack_' />
+        <SectionTitle text='My Skills' />
         <p className={styles["under-title"]}>
-          Here are the technologies I have been working with recently
+          Skills I have been developing through the last 5 years.
         </p>
         <Skills skillsData={skillsData} />
         <h3 className={styles["other-skills"]}>Other Skills</h3>
