@@ -17,11 +17,10 @@ const HeroSection = ({}: IHeroSectionProps) => {
       <section className={`${styles["hero-section"]} spacer`}>
         {/* Content Area */}
         <div className={styles["hero-content"]}>
-          <OverTitle text='Hi, my name is Sotos' />
-          <BigTitle text='I build things for the web.' />
+          <OverTitle text='Hi, my name is Sotirios' />
+          <BigTitle text='I design and build things for the web.' />
           <Description
-            text="I'm a Front-end Developer who loves consistency and likes working with technologies and conventions that boost productivity and lead to better, faster and
-          more maintainable results."
+            text="I am a UX/UI Designer and front-end Developer who focuses on creating products that provide real value to people all over the world."
           />
           <a href='#work'>
             <button className={styles["see-work-button"]}>See my work</button>
