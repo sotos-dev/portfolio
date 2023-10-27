@@ -49,10 +49,6 @@ export const skillsData = [
   {
     skillName: "HMTL",
     id: "html",
-  },
-  {
-    skillName: "SASS",
-    id: "sass",
   }
 ]
 
